@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NetSimpleWebApp", "ASP.NetSimpleWebApp\ASP.NetSimpleWebApp.csproj", "{63A7E0F8-72C2-4B1E-94C4-3492F55D0DD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NetSimpleWebApp.Tests", "ASP.NetSimpleWebApp.Tests\ASP.NetSimpleWebApp.Tests.csproj", "{53A05E75-98B5-448A-BA40-91504A82F15A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63A7E0F8-72C2-4B1E-94C4-3492F55D0DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A7E0F8-72C2-4B1E-94C4-3492F55D0DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A7E0F8-72C2-4B1E-94C4-3492F55D0DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A7E0F8-72C2-4B1E-94C4-3492F55D0DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53A05E75-98B5-448A-BA40-91504A82F15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A05E75-98B5-448A-BA40-91504A82F15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A05E75-98B5-448A-BA40-91504A82F15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A05E75-98B5-448A-BA40-91504A82F15A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://azooinmyluggage.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ASP.NetSimpleWebApp.Tests\\ASP.NetSimpleWebApp.Tests.csproj
+		SccProjectName1 = ASP.NetSimpleWebApp.Tests
+		SccLocalPath1 = ASP.NetSimpleWebApp.Tests
+		SccProjectUniqueName2 = ASP.NetSimpleWebApp\\ASP.NetSimpleWebApp.csproj
+		SccProjectName2 = ASP.NetSimpleWebApp
+		SccLocalPath2 = ASP.NetSimpleWebApp
+	EndGlobalSection
+EndGlobal
