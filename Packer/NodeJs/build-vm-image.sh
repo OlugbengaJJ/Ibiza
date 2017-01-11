@@ -26,6 +26,12 @@ export ADMIN_USERNAME=$7
 ## Azure VMSS Admin Password
 export ADMIN_PASSWORD=$8
 
+echo "Subscription"
+echo ARM_SUBSCRIPTION_ID
+echo "Subscription 1"
+echo $2
+echo "************* execute packer build"
+
 rm packer-build-output.log
 
 echo "************* execute packer build"
