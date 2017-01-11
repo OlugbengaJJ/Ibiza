@@ -27,9 +27,18 @@ export ADMIN_USERNAME=$7
 export ADMIN_PASSWORD=$8
 
 echo "Subscription"
-echo ARM_SUBSCRIPTION_ID
-echo "Subscription 1"
+echo $1
 echo $2
+echo $3
+echo $4
+echo $5
+echo $6
+echo $7
+echo $8
+
+echo "Subscription 1"
+echo $ARM_SUBSCRIPTION_ID
+
 echo "************* execute packer build"
 
 rm packer-build-output.log
