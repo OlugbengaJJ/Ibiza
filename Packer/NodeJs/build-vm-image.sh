@@ -40,6 +40,7 @@ echo "Subscription 1"
 echo $ARM_SUBSCRIPTION_ID
 
 printf '%s\n' "${PWD##*/}"
+echo $PWD
 
 echo "************* execute packer build"
 
