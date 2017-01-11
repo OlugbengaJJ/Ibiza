@@ -1,0 +1,58 @@
+- hosts: all
+  sudo: yes
+
+  tasks:
+  - name: Install Packages
+    apt: name={{ item }} update_cache=yes state=present
+    with_items:
+      - apache2 
+      - git
+      - curl
+      - wget
+
+  - name: Ensure nodejs is installed
+    sudo: yes
+    shell: "apt-get -y install nodejs"
+  
+  - name: Ensure build essentials is installed
+    sudo: yes
+    shell: "apt-get -y install build-essential"
+
+  # - name: Git Clone Repo
+  #   git: repo=https://github.com/********/spinnaker-packer-ansible-php-azure-demo.git dest=/opt/phpapp update=yes force=yes accept_hostkey=yes 
+  #   register: git_finished
+
+
+  - name: copy server.js
+    sudo: yes
+    copy: src=/tmp/server.js  dest=/var/www/server.js mode=644 
+        
+  - name: copy package.json
+    sudo: yes
+    copy: src=/tmp/package.json  dest=/var/www/package.json mode=644 
+    
+  
+  # - name: copy dist directory
+  #   sudo: yes
+  #   copy: src=/tmp/dist/  dest=/var/www/html/dist 
+  #   #notify: Restart Apache
+  
+
+  # handlers:
+  # - name: Restart Apache
+  #   service: name=apache2 state=restarted
+
+- name: Ensure app is running
+    sudo: yes
+    shell: "npm update /var/www/package.json"
+
+- name: Ensure app is running
+    sudo: yes
+    shell: "chmod +x /var/www/server.js"
+
+  - name: Ensure app is running
+    sudo: yes
+    shell: "/var/www/server.js"
+    
+
+    
