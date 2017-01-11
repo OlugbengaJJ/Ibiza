@@ -42,12 +42,12 @@
   },
     {
       "type": "file",
-      "source": "../package.json",
+      "source": "../../NodejsWebApp/NodejsWebApp/package.json",
       "destination": "/tmp/package.json"
     },
     {
       "type": "file",
-      "source": "../server.js",
+      "source": "../../NodejsWebApp/NodejsWebApp/server.js",
       "destination": "/tmp/server.js"
     },
   {
