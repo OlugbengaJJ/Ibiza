@@ -39,6 +39,8 @@ echo $8
 echo "Subscription 1"
 echo $ARM_SUBSCRIPTION_ID
 
+printf '%s\n' "${PWD##*/}"
+
 echo "************* execute packer build"
 
 rm packer-build-output.log
