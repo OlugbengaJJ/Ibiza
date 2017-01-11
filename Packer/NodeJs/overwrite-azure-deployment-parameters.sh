@@ -10,3 +10,4 @@ echo $imageodisk
  sed -i 's|@@IMAGEURI@@|'"$imageodisk"'|g' azuredeploy.parameters.json
 
 cat azuredeploy.parameters.json
+echo " =Azure Deploy parms overwritten"
