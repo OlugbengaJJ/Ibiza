@@ -42,17 +42,17 @@
   # - name: Restart Apache
   #   service: name=apache2 state=restarted
 
-- name: Ensure app is running
-    sudo: yes
-    shell: "npm update /var/www/package.json"
+# - name: Ensure app is running
+#     sudo: yes
+#     shell: "npm update /var/www/package.json"
 
-- name: Ensure app is running
-    sudo: yes
-    shell: "chmod +x /var/www/server.js"
+# - name: Ensure app is running
+#     sudo: yes
+#     shell: "chmod +x /var/www/server.js"
 
-  - name: Ensure app is running
-    sudo: yes
-    shell: "/var/www/server.js"
+#   - name: Ensure app is running
+#     sudo: yes
+#     shell: "/var/www/server.js"
     
 
     
