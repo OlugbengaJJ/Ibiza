@@ -30,11 +30,11 @@
 
   - name: copy server.js
     sudo: yes
-    copy: src=/tmp/server.js  dest={{homeDir}}/{{appDir}}/server.js mode=644 
+    copy: src=./server.js  dest={{homeDir}}/{{appDir}}/server.js mode=644 
         
   - name: copy package.json
     sudo: yes
-    copy: src=/tmp/package.json  dest={{homeDir}}/{{appDir}}/package.json mode=644 
+    copy: src=./package.json  dest={{homeDir}}/{{appDir}}/package.json mode=644 
     register: copy_finished
 
 #   - name: Copy Private Key
@@ -49,6 +49,11 @@
     register: npm_finished
     when: copy_finished.changed
 
+ - name: Stop APP
+    sudo_user: ubuntu
+    command: ln -s /usr/bin/nodejs /usr/bin/node
+    ignore_errors: yes
+    
   - name: Stop APP
     sudo_user: ubuntu
     command: pm2 stop app chdir={{homeDir}}/{{appDir}}/

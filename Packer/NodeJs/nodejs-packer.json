@@ -43,12 +43,12 @@
     {
       "type": "file",
       "source": "../appcode/NodejsWebApp/package.json",
-      "destination": "/tmp/package.json"
+      "destination": "/package.json"
     },
     {
       "type": "file",
       "source": "../appcode/NodejsWebApp/server.js",
-      "destination": "/tmp/server.js"
+      "destination": "/server.js"
     },
   {
       "type": "ansible-local",

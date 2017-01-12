@@ -26,17 +26,10 @@ export ADMIN_USERNAME=$7
 ## Azure VMSS Admin Password
 export ADMIN_PASSWORD=$8
 
-echo "Subscription"
+echo "Subscription details"
 echo $1
-echo $2
-echo $3
-echo $4
-echo $5
-echo $6
-echo $7
-echo $8
 
-echo "Subscription 1"
+echo "Subscription ID"
 echo $ARM_SUBSCRIPTION_ID
 
 printf '%s\n' "${PWD##*/}"
