@@ -1,0 +1,12 @@
+﻿{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "samples-workitems",
+      "connection": "https://atulmfunctionappstorage.blob.core.windows.net/?sv=2015-12-11&ss=bfqt&srt=sco&sp=rwdlacup&se=2017-01-14T04:46:54Z&st=2017-01-13T20:46:54Z&spr=https&sig=tJ6GZRpi3M4tWj3LVLlcKMnWrkiSY56TcI4tLN%2F%2FT%2FU%3D"
+    }
+  ]
+}
