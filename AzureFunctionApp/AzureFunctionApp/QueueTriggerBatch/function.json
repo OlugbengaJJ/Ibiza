@@ -1,0 +1,12 @@
+﻿{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "input",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "samples-batch",
+      "connection": "SharedAccessSignature=sv=2015-12-11&ss=bt&srt=sco&sp=rl&st=2017-01-16T04%3A43%3A00Z&se=2017-01-17T04%3A43%3A00Z&sig=k%2FVzEClh%2BTjupVbUK0QRxwHfwFgJjHKe9olYcb6Am24%3D;BlobEndpoint=https://atulmrgdisks834.blob.core.windows.net/;TableEndpoint=https://atulmrgdisks834.table.core.windows.net"
+    }
+  ]
+}
