@@ -35,8 +35,8 @@ public class EchoDialog : IDialog<object>
             PromptDialog.Confirm(
                 context,
                 AfterResetAsync,
-                "Are you sure you want to reset the count?",
-                "Didn't get that!",
+                "Are you sure you want to reset the count??",
+                "Didn't get that!!",
                 promptStyle: PromptStyle.Auto);
         }
         else
@@ -52,11 +52,11 @@ public class EchoDialog : IDialog<object>
         if (confirm)
         {
             this.count = 1;
-            await context.PostAsync("Reset count.");
+            await context.PostAsync("Reset count..");
         }
         else
         {
-            await context.PostAsync("Did not reset count.");
+            await context.PostAsync("Did not reset count..");
         }
         context.Wait(MessageReceivedAsync);
     }
