@@ -3,22 +3,22 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vmSku": {
-      "value": "Standard_A1"
+      "value": "Standard_DS1_v2"
     },
     "vmssName": {
-      "value": "nodejsvmss"
+      "value": "atulmvmss"
     },
     "instanceCount": {
       "value": 2
     },
     "adminUsername": {
-      "value": "@@VMUSERNAME@@"
+      "value": "atulm"
     },
     "imageUri":{
-      "value": "@@IMAGEURI@@"
+      "value": "https://atulmrgdisks834.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/vmss-vhd-osDisk.a4282a91-dc43-470a-a7a3-5bf520871be6.vhd"
     },
     "adminPassword": {
-      "value": "@@VMPASSWORD@@"
+      "value": "@!HoHum@4321"
     }
   }
 }
