@@ -50,6 +50,10 @@
       "destination": "./server.js"
     },
   {
+      "type": "shell",
+      "playbook_file": "./nodejs-packer-shell-provisioner.sh"
+  },
+  {
     "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
     "inline": [
       "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
