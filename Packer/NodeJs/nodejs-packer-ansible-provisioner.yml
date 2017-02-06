@@ -35,8 +35,7 @@
   - name: copy package.json
     sudo: yes
     copy: src=./package.json  dest={{homeDir}}/{{appDir}}/package.json mode=644 
-    register: copy_finished
-
+    
 #   - name: Copy Private Key
 #     copy: src={{privateKey}} dest={{homeDir}} mode=0600
 
@@ -46,9 +45,7 @@
 
   - name: Running NPM install
     npm: path={{homeDir}}/{{appDir}}/
-    register: npm_finished
-    when: copy_finished.changed
-
+    
  - name: NodeLink
     sudo_user: ubuntu
     command: ln -s /usr/bin/nodejs /usr/bin/node
@@ -63,4 +60,3 @@
     sudo_user: ubuntu
     command: pm2 start server.js --name app chdir={{homeDir}}/{{appDir}}/
     ignore_errors: yes
-    when: npm_finished.changed

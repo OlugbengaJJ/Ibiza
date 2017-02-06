@@ -39,6 +39,14 @@
     "inline_shebang": "/bin/sh -x",
     "type": "shell"
   },
+
+  {
+  "type": "shell",
+  "execute_command": "echo '{{user `ssh_pass`}}' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
+  "inline": [
+    "echo '%sudo    ALL=(ALL)  NOPASSWD:ALL' >> /etc/sudoers"
+  ]
+},
     {
       "type": "file",
       "source": "../appcode/NodejsWebApp/package.json",
@@ -51,7 +59,7 @@
     },
   {
       "type": "shell",
-      "playbook_file": "./nodejs-packer-shell-provisioner.sh"
+      "script": "./nodejs-packer-shell-provisioner.sh"
   },
   {
     "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
