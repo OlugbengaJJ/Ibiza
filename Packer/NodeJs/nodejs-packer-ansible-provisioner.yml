@@ -28,13 +28,13 @@
   - name: Create APP Directory
     file: path={{homeDir}}/{{appDir}} state=directory
 
-#   - name: copy server.js
-#     sudo: yes
-#     copy: src=./server.js  dest={{homeDir}}/{{appDir}}/server.js mode=644 
+  - name: copy server.js
+    sudo: yes
+    copy: src=./server.js  dest={{homeDir}}/{{appDir}}/server.js mode=644 
         
-#   - name: copy package.json
-#     sudo: yes
-#     copy: src=./package.json  dest={{homeDir}}/{{appDir}}/package.json mode=644 
+  - name: copy package.json
+    sudo: yes
+    copy: src=./package.json  dest={{homeDir}}/{{appDir}}/package.json mode=644 
     
 # #   - name: Copy Private Key
 # #     copy: src={{privateKey}} dest={{homeDir}} mode=0600
